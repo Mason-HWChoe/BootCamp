@@ -1,0 +1,155 @@
+/* CSS 작성 */
+a {
+	text-decoration: none;
+  }
+
+.container {
+    margin: 100px 321px;
+    background-color: #fff;
+    width: 1020px;
+    height: 1010px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 176px;
+    height: 40px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0 24px 0;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+
+.divider {
+    height: 20px;
+    width: 2px;
+    color: var(--gray-600);
+    margin: 0 10px;
+
+}
+
+.sub-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: var(--gray-600);
+}
+
+.big-box {
+    padding: 20px 28px;
+}
+
+.big-box>img {
+    width: 446px;
+    height: 270px;
+}
+
+.small-box {
+    padding: 14px 22px 14px 21px;
+}
+
+.small-box>img {
+    width: 200px;
+    height: 282px;
+}
+
+.mgr16 {
+    margin-right: 16px;
+}
+
+.top-left {
+    float: left;
+}
+
+.top-right {
+    float: right;
+}
+
+.mid-left {
+    display: flex;
+    float: left;
+    margin: 16px 0 16px 0;
+}
+
+.mid-right {
+    display: flex;
+    float: right;
+    margin: 16px 0 16px 0;
+}
+
+.bottom-left {
+    float: left;
+}
+
+.bottom-right {
+    display: flex;
+    float: right;
+}
+
+.buy-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    color: #fff;
+}
+
+.big-box {
+    position: relative;
+    border: 1px solid #C4C4C4;
+    background-color: #fff;
+    width: 502px;
+    height: 310px;
+}
+
+.active:hover,
+.active:focus {
+    border-color: var(--blue-600);
+}
+
+.active:hover .buy-btn,
+.active:focus .buy-btn {
+    width: 112px;
+    height: 42px;
+    background-color: var(--blue-600);
+    transition: background-color 1s;
+}
+
+.active:hover .arrow::before,
+.active:focus .arrow::before {
+    content: '구매하기';
+}
+
+.small-box {
+    position: relative;
+    border: 1px solid #C4C4C4;
+    background-color: #fff;
+    width: 243px;
+    height: 310px;
+}
+
+.small-box:hover,
+.small-box:focus {
+    border-color: var(--blue-600);
+}

@@ -1,0 +1,62 @@
+{
+    "sectionInfoList" : [
+        {
+            "sectionTitle" : "인기상품",
+            "productList" : [
+                {
+                    "id" : 1,
+                    "imgSrc" : "../public/assets/파프리카.jpg", 
+                    "name" : "파프리카 2입",
+                    "discountPercent" : 20,
+                    "price" : 2000,
+                    "originalPrice" : 2500
+                },
+                {
+                    "id" : 2,
+                    "imgSrc" : "../public/assets/단호박.jpg", 
+                    "name" : "단호박",
+                    "discountPercent" : 20,
+                    "price" : 2000,
+                    "originalPrice" : 2500
+                },
+                {
+                    "id" : 3,
+                    "imgSrc" : "../public/assets/아보카도.jpg", 
+                    "name" : "아보카도 1개",
+                    "discountPercent" : 20,
+                    "price" : 2000,
+                    "originalPrice" : 2500
+                }
+            ]
+        },
+        {
+            "sectionTitle" : "재구매율이 높은 상품",
+            "productList" : [
+                {
+                    "id" : 4,
+                    "imgSrc" : "../public/assets/식빵.jpg", 
+                    "name" : "식빵 1봉지",
+                    "discountPercent" : 20,
+                    "price" : 1200,
+                    "originalPrice" : 1500
+                },
+                {
+                    "id" : 5,
+                    "imgSrc" : "../public/assets/키위.jpg", 
+                    "name" : "키위 1팩",
+                    "discountPercent" : 15,
+                    "price" : 8500,
+                    "originalPrice" : 10000
+                },
+                {
+                    "id" : 6,
+                    "imgSrc" : "../public/assets/바나나.jpg", 
+                    "name" : "바나나 5개",
+                    "discountPercent" : 20,
+                    "price" : 2000,
+                    "originalPrice" : 2500
+                }
+            ]
+        }
+    ]
+}
