@@ -139,6 +139,7 @@ a {
 .active:hover .arrow::before,
 .active:focus .arrow::before {
     content: '구매하기';
+    padding-right: 10px;
 }
 
 .small-box {

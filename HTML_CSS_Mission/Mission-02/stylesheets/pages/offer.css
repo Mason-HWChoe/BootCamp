@@ -1,0 +1,98 @@
+/* 오늘의 쇼핑 제안 */
+
+.container {
+    padding: 100px 147px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 176px;
+    height: 40px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.sub-title::before {
+    content: '';
+    display: inline-block;
+    background-image: url("../../assets/icon/shopping.svg");
+    width: 30px;
+    height: 30px;
+    vertical-align: sub;
+}
+
+.shopping-list {
+    display: flex;
+}
+
+.shopping-item {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    width: 53px;
+    height: 30px;
+    background-color: var(--color-red-500);
+    border-bottom-right-radius: 4px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+}
+
+.img {
+    padding: 14px 20px 12px 20px;
+}
+
+.title {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(24, 24, 24, 1);
+    margin: 0;
+}
+
+.shopping-info {
+    padding: 0 14px 38px 14px;
+}
+
+.review-count {
+    margin-left: 4px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-gray-700);
+}
+
+.rocket-delivery {
+    margin-top: 12px;
+}
+
+.free-delivery {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-gray-700);
+}
+
+.review-area {
+    margin-top: 4px;
+}
+
+.first-review-area {
+    margin-top: 12px;
+}
+
+.review-star {
+    position: relative;
+    display: inline-block;
+    background: url("../../assets/sprites/rating-stars.png");
+    width: 68px;
+    height: 12px;
+}
