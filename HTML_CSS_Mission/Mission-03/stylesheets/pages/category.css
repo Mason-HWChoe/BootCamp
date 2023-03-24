@@ -136,6 +136,10 @@
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
+
 .living-carousel-banner {
     position: absolute;
     top: 483px;
