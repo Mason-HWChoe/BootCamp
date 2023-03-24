@@ -1,1 +1,249 @@
-/* 카테고리별 추천 광고상품 */
+
+
+.container {
+    padding: 100px 130px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 246px;
+    height: 56px;
+}
+
+
+.category {
+    margin-top: 48px;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.hot-trend {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.title-1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.title-2 {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--color-blue-600);
+}
+
+.category-living {
+    display: flex;
+    margin-top: 24px;
+    padding: 1px 2px 2px 0;
+    border-top: 1px solid var(--color-brown-300);
+    border-bottom: 1px solid var(--color-brown-300);
+}
+
+.category-kitchen {
+    display: flex;
+    margin-top: 24px;
+    padding: 1px 2px 2px 0;
+    border-top: 1px solid var(--color-green-700);
+    border-bottom: 1px solid var(--color-green-700);
+}
+
+.living-title-area, .kitchen-title-area {
+    width: 174px;
+    height: 631px;
+}
+
+.sub-title-area {
+    margin: 48px 0 0px 24px;
+}
+
+.living-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-brown-300);
+}
+
+.kitchen-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-green-700);
+}
+
+.living-link, .kitchen-link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.arrow {
+    background-image: url(../../assets/icon/angle-right-default.svg);
+    width: 6px;
+    height: 10px;
+    display: inline-block;
+}
+
+.keyword-area {
+    margin: 248px 0 0 24px;
+}
+
+.keyword-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.keyword-list-area {
+    width: 124px;
+    height: 220px;
+    margin-top: 12px;
+}
+
+.living-keyword-list, .kitchen-keyword-list {
+    display: inline-block;
+    margin-top: 8px;
+    border: 1px solid var(--color-gray-400);
+}
+
+.living-keyword {
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--color-brown-300);
+}
+
+.kitchen-keyword {
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--color-green-700);
+}
+
+.carousel {
+    position: relative;
+}
+
+.living-carousel-banner {
+    position: absolute;
+    top: 483px;
+    left: 30px;
+    width: 260px;
+    height: 90px;
+    background-color: var(--color-brown-300);
+}
+
+.kitchen-carousel-banner {
+    position: absolute;
+    top: 483px;
+    left: 30px;
+    width: 260px;
+    height: 90px;
+    background-color: var(--color-green-700);
+}
+
+.banner-title {
+    display: block;
+    margin: 19px 27px 8px 28px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-desc {
+    display: block;
+    margin: 0 22px 20px 23px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-btn {
+    position: absolute;
+    bottom: 22px;
+    left: 144px;
+}
+
+.carousel-prev {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-gray-700);
+}
+
+.carousel-next {
+    margin-left: 8px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-gray-600);
+}
+
+.living-item-area {
+    width: 526px;
+    height: 631px;
+}
+
+.list-top, .list-bottom {
+    display: flex;
+}
+
+.list-bottom::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--color-gray-600);
+    height: 0.5px;
+    width: 528px;
+}
+
+.living-item, .kitchen-item {
+    margin: 9px 0 8px 16px;
+    width: 160px;
+    height: 300px;
+}
+
+.item-desc, .unit {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.price {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.discount-price, .rocket-wow-member-price {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--color-red-500);
+}
+
+.special-price {
+    margin-top: 4px;
+}
