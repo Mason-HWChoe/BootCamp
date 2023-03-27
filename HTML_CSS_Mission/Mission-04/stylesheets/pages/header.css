@@ -1,0 +1,78 @@
+/* 헤더 */
+
+.login-bar-area {
+  background-color: var(--color-gray-100);
+}
+
+.common-inner {
+  margin: 0 auto;
+  max-width: 1020px;
+}
+
+.login-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.login-bar li {
+  margin: 0 10px;
+}
+
+.login-bar li:first-child {
+  margin-left: -60px;
+}
+
+.login-bar li:nth-child(4){
+  margin-left: -1000px;
+}
+
+.login-bar-list li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.logo-img {
+  background: url(../../assets/logo/logo.svg) no-repeat;
+  background-size: cover;
+  width: 176px;
+  height: 40px;
+}
+
+.logo-txt {
+  position: absolute;
+  left: -10000px;
+  overflow: hidden;
+}
+
+.header-inner {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-area: 
+  ""
+  ""
+  "";
+}
+
+
+select {
+    width: 135px;
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0H0L4.69565 6L9 0Z' fill='%23767676'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 9px 6px;
+    padding: 10px;
+  }
