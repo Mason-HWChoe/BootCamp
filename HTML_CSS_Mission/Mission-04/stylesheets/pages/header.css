@@ -55,12 +55,46 @@
 
 .header-inner {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-  grid-area: 
-  ""
-  ""
-  "";
+  grid-template-rows: 3.5rem 4rem 1rem 2.5rem;
+  grid-template-columns: 11rem 4rem 17.6rem 3rem 51.6rem 2.2rem 2rem 4.5rem 1.5rem 4.5rem;
+  grid-template-areas: 
+  "category . . . . . . . . ."
+  "category . logo . search . . mypage . cart"
+  "category . . . . . . mypage . cart"
+  "category . nav nav nav nav . . . .";
+}
+
+.logo-area {
+  grid-area: logo;
+}
+
+.category-btn-area {
+  grid-area: category;
+}
+
+.search-area {
+  grid-area: search;
+}
+
+.myCoupang {
+  grid-area: mypage;
+}
+
+.cart {
+  grid-area: cart;
+}
+
+.nav-area {
+  grid-area: nav;
+  display: flex;
+}
+
+.nav-txt {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  padding: 6px 14px;
 }
 
 
