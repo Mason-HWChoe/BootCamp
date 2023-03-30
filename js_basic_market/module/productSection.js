@@ -1,26 +1,26 @@
-import { appendChildrenList, makeDomWithProperties } from "../utils/dom.js";
+import { appendChildrenList, makeDOMwithProperties } from "../utils/dom.js";
 import { getProductList } from "./productList.js";
 
-
 export const getProductSection = (sectionName, productInfoList) => {
-    const productListSection = makeDomWithProperties('div', {
+    const productListSection = makeDOMwithProperties('div', {
         className: 'product-list-section',
-    });
-    const sectionTitle = makeDomWithProperties('div', {
-        className: 'section-title',
-    });
-    const titleHighLight = makeDomWithProperties('span', {
-        className: 'section-title-highlight',
-    });
-    const title = makeDomWithProperties('span', {
-        innerHTML: sectionName,
-    });
+    })
 
-    appendChildrenList(sectionTitle, [ titleHighLight, title ]);
+    const sectionTitle = makeDOMwithProperties('div', {
+        className: 'section-title',
+    })
+    const titleHighlight = makeDOMwithProperties('span', {
+        className: 'section-title-highlight',
+    })
+    const title = makeDOMwithProperties('span', {
+        innerHTML: sectionName,
+    })
+    
+    appendChildrenList(sectionTitle, [titleHighlight, title]);
 
     const productListContainer = getProductList(productInfoList);
 
-    appendChildrenList(productListSection, [ sectionTitle, productListContainer ]);
+    appendChildrenList(productListSection, [sectionTitle, productListContainer]);
 
     return productListSection;
 };

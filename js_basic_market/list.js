@@ -1,26 +1,19 @@
-import { getProductCard } from "./module/productCard.js";
+import { fetchSectionListData } from "./module/fetch.js";
+import { setButtonEvent, setFilterEvent } from "./module/productFilter.js";
+import { getProductList } from "./module/productList.js";
 
 
-const sectionDom = document.getElementsByTagName('section')[0];
 
-const productCard = getProductCard({
-    "id" : 2,
-    "imgSrc" : "../public/assets/단호박.jpg", 
-    "name" : "단호박",
-    "discountPercent" : 20,
-    "price" : 2000,
-    "originalPrice" : 2500
-});
+const sectionInfoList = await fetchSectionListData();
 
-const productCard2 = getProductCard({
-    "id" : 5,
-    "imgSrc" : "../public/assets/키위.jpg", 
-    "name" : "키위 1팩",
-    "discountPercent" : 15,
-    "price" : 8500,
-    "originalPrice" : 10000
+const productList = sectionInfoList.reduce(
+    (prev, curr) => [...prev, ...curr.productList], 
+    []
+);
 
-})
+const section = document.getElementsByTagName('section')[0];
+const productListDOM = getProductList(productList);
+section.appendChild(productListDOM);
 
-sectionDom.appendChild(productCard);
-sectionDom.appendChild(productCard2);
+setFilterEvent();
+setButtonEvent(productList);

@@ -1,17 +1,19 @@
-import { makeDomWithProperties } from "../utils/dom.js"
+import { makeDOMwithProperties } from "../utils/dom.js"
 import { getProductCard } from "./productCard.js";
 
-export const getProductList = (productInfoList) => {
-    const productListContainer = makeDomWithProperties('div', {
-        className: 'product-list-con',
+export const getProductList = (productInfoList, removeCartCallback) => {
+    if(!productInfoList || !Array.isArray(productInfoList)) return;
+    const productListContainer = makeDOMwithProperties('div', {
+        className: 'product-list-con'
     });
 
     productInfoList.forEach((productInfo) => {
         productListContainer.appendChild(
             getProductCard({
-                ...productInfo
-            })
-        );
-    })
+              ...productInfo
+            }, removeCartCallback)
+        )
+    });
+
     return productListContainer;
 };
