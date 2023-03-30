@@ -26,3 +26,11 @@ button:disabled {
 figure{
   margin: 0;
 }
+
+h1, p, div {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}

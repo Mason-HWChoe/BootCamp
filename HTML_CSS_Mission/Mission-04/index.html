@@ -46,49 +46,55 @@
 
             <div class="category-btn-area">
               <button class="button--category">
-                <span class="btn-img"></span>
+                <div class="btn-img"></div>
                 <span class="btn-text">카테고리</span>
               </button>
             </div>
 
             <div class="search-area">
               <form class="search-area-form">
-                <select name="category" id="category-search">
+                <select class="select-bar" name="category" id="category-search">
                   <option class="category-content" selected disabled hidden>전체</option>               
                 </select>
-                <input type="search" placeholder="찾고 싶은 상품을 검색해 보세요!" required>
+                <input class="search-bar" type="search" placeholder="찾고 싶은 상품을 검색해 보세요!" required>
+                <button class="mic" aria-label="음성으로 검색">
+                  <img src="assets/icon/mic.svg" alt="음성검색 마이크">
+                </button>
+                <button class="search-btn" aria-label="검색하기 버튼">
+                  <img src="assets/icon/search.svg" alt="검색하기 돋보기">
+                </button>
               </form>
-              <button class="mic" aria-label="음성으로 검색">
-                <img src="assets/icon/mic.svg" alt="음성검색 마이크">
-              </button>
-              <button class="search" aria-label="검색하기 버튼">
-                <img src="assets/icon/search.svg" alt="검색하기 돋보기">
-              </button>
             </div>
 
             <div class="myCoupang">
               <button class="my-coupang-btn">
-                <span class="my-coupang-txt">마이쿠팡</span>
+                <div class="my-coupang-img"></div>
+                <div class="my-coupang-txt">마이쿠팡</div>
               </button>
-              <ul>
-                <li class="link-list">
-                  <a href="/">주문목록</a>
-                </li>
-                <li class="link-list">
-                  <a href="/">취소/반품</a>
-                </li>
-                <li class="link-list">
-                  <a href="/">찜리스트</a>
-                </li>
-              </ul>
+              <div class="link-list-area">
+                <ul class="link-list" >
+                  <li class="link-content">
+                    <a href="/">주문목록</a>
+                  </li>
+                  <li class="link-content">
+                    <a href="/">취소/반품</a>
+                  </li>
+                  <li class="link-content">
+                    <a href="/">찜리스트</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="cart">
               <button class="cart-btn">
-                <span class="cart-txt">장바구니</span>
+                <div class="cart-img">
+                  <div class="cart-count">0</div>
+                </div>
+                <div class="cart-txt">장바구니</div>
               </button>
-              <div class="cart-content">
-                <p class="cart-txt">장바구니에 담긴 상품이 없습니다.</p>
+              <div class="cart-content-area">
+                <p class="cart-content-txt">장바구니에 담긴 상품이 없습니다.</p>
               </div>
             </div>
 
