@@ -7,8 +7,13 @@
     },
     {
       "content": "텍스트4",
-      "completed": false,
+      "completed": true,
       "id": 4
+    },
+    {
+      "content": "qwdsad",
+      "completed": true,
+      "id": 6
     }
   ]
 }
