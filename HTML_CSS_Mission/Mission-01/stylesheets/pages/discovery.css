@@ -1,156 +1,111 @@
-/* CSS 작성 */
-a {
-	text-decoration: none;
-  }
-
-.container {
-    margin: 100px 321px;
-    background-color: #fff;
-    width: 1020px;
-    height: 1010px;
-}
-
+/* Header */
 .header {
-    text-align: center;
+  width: 102rem;
+  margin: 0 auto;
 }
 
-.logo {
-    width: 176px;
-    height: 40px;
+.brand {
+  margin-top: 10rem;
+  margin-bottom: 4.8rem;
 }
 
-.section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 48px 0 24px 0;
+.brand__link {
+  display: block;
+  width: 17.6rem;
 }
 
-.title {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: center;
+.brand__image {
+  max-width: 100%;
+  height: auto;
 }
 
-.divider {
-    height: 20px;
-    width: 2px;
-    color: var(--gray-600);
-    margin: 0 10px;
-
+/* Section */
+.discovery {
+  width: 103.6rem;
+  margin: 0 auto 10rem;
 }
 
-.sub-title {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: left;
-    color: var(--gray-600);
+.discovery__headline {
+  display: flex;
+  flex-grow: row nowrap;
+  align-items: center;
+  margin-left: 0.8rem;
 }
 
-.big-box {
-    padding: 20px 28px;
+.discovery__title,
+.discovery__subtitle {
+  margin: 0;
+  font-weight: 500;
 }
 
-.big-box>img {
-    width: 446px;
-    height: 270px;
+.discovery__title {
+  font-size: 2.4rem;
 }
 
-.small-box {
-    padding: 14px 22px 14px 21px;
+.discovery__headline .divider {
+  margin: 0 1rem;
+  color: var(--color-gray-600);
 }
 
-.small-box>img {
-    width: 200px;
-    height: 282px;
+.discovery__subtitle {
+  font-size: 1.6rem;
+  color: var(--color-gray-600);
 }
 
-.mgr16 {
-    margin-right: 16px;
+/* list area */
+.discovery__list {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  margin: 0.8rem 0 0 0;
 }
 
-.top-left {
-    float: left;
+.discovery__item {
+  float: left;
+  margin: 1.6rem 0.8rem 0;
 }
 
-.top-right {
-    float: right;
+.discovery__link {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-gray-500);
+  height: 31rem;
+  position: relative;
 }
 
-.mid-left {
-    display: flex;
-    float: left;
-    margin: 16px 0 16px 0;
+.cardlink--large {
+  width: 50.2rem;
 }
 
-.mid-right {
-    display: flex;
-    float: right;
-    margin: 16px 0 16px 0;
+.cardlink--small {
+  width: 24.3rem;
 }
 
-.bottom-left {
-    float: left;
+.discovery__button {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  background: rgba(0, 0, 0, 0.2) url(./../../assets/icon/angle-right-square.svg)
+    no-repeat 100% 50%;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: background 0.4s;
 }
 
-.bottom-right {
-    display: flex;
-    float: right;
+.discovery__link:hover .discovery__button,
+.discovery__link:focus .discovery__button {
+  background-color: var(--color-blue-600);
+  width: auto;
+  padding: 1.2rem 4rem 1.3rem 2rem;
+  color: var(--color-white);
 }
 
-.buy-btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 20px;
-    width: 42px;
-    height: 42px;
-    border: none;
-    background-color:rgba(0, 0, 0, 0.2);
-}
-
-.arrow {
-    color: #fff;
-}
-
-.big-box {
-    position: relative;
-    border: 1px solid #C4C4C4;
-    background-color: #fff;
-    width: 502px;
-    height: 310px;
-}
-
-.active:hover,
-.active:focus {
-    border-color: var(--blue-600);
-}
-
-.active:hover .buy-btn,
-.active:focus .buy-btn {
-    width: 112px;
-    height: 42px;
-    background-color: var(--blue-600);
-    transition: background-color 1s;
-}
-
-.active:hover .arrow::before,
-.active:focus .arrow::before {
-    content: '구매하기';
-    padding-right: 10px;
-}
-
-.small-box {
-    position: relative;
-    border: 1px solid #C4C4C4;
-    background-color: #fff;
-    width: 243px;
-    height: 310px;
-}
-
-.small-box:hover,
-.small-box:focus {
-    border-color: var(--blue-600);
+.discovery__link:hover .discovery__button::before,
+.discovery__link:focus .discovery__button::before {
+  content: attr(aria-label);
 }
