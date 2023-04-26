@@ -1,5 +1,269 @@
+.header {
+  width: 102rem;
+  margin: 10rem auto 4.8rem;
+}
 
+.brand {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+.brand__link {
+  display: block;
+}
+
+.category {
+  width: 102rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category__headline {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.category__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.category__title--accent {
+  color: var(--color-blue-600);
+}
+.category__enTitle {
+  order: -1;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.categoryUnit {
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.categoryUnit::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52.8rem;
+  height: 0.1rem;
+  background: linear-gradient(
+    to bottom,
+    var(--color-gray-600) 0%,
+    var(--color-gray-600) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+
+.houseware {
+  border-color: var(--color-brown-300);
+}
+
+.kitchenware {
+  border-color: var(--color-green-700);
+}
+
+.houseware .categoryUnit__title,
+.houseware .hashTag__link {
+  color: var(--color-brown-300);
+}
+
+.kitchenware .categoryUnit__title,
+.kitchenware .hashTag__link {
+  color: var(--color-green-700);
+}
+
+.houseware .carousel__caption {
+  background-color: var(--color-brown-300);
+}
+
+.kitchenware .carousel__caption {
+  background-color: var(--color-green-700);
+}
+
+.categoryUnit__group:nth-child(1) {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 4.8rem 2.4rem 2.8rem;
+}
+
+.categoryUnit__group:nth-child(2) {
+  width: 32rem;
+}
+
+.categoryUnit__group:nth-child(3) {
+  width: 52.8rem;
+}
+
+.categoryUnit__headline {
+  flex-grow: 1;
+}
+
+.categoryUnit__title {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.categoryUnit__goLink {
+  color: var(--color-gray-700);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background: url(./../../assets/icon/angle-right-default.svg) no-repeat 100%
+    50%;
+  padding-right: 1rem;
+}
+
+.hashTag__title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hashTag__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hashTag__item {
+  margin-top: 1.2rem;
+}
+
+.hashTag__link {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-gray-400);
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.carousel {
+  position: relative;
+  width: 32rem;
+}
+
+.carousel__controles {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__indicator {
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.8rem;
+  background-color: var(--color-gray-600);
+}
+
+.carousel__indicator:first-child {
+  margin-left: 0;
+}
+
+.carousel__indicator.is--active {
+  background-color: var(--color-gray-700);
+}
+
+.carousel__list {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+.carousel__caption {
+  position: absolute;
+  bottom: 5.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26rem;
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.carousel__caption--large {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  display: block;
+}
+
+.carousel__caption--small {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.carousel__item {
+  display: none;
+  width: 100%;
+}
+
+.carousel__item.is--active {
+  display: block;
+}
+
+.categoryUnit__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.categoryUnit__item {
+  margin: 0.8rem 0 0.8rem 1.6rem;
+  width: 16rem;
+  height: 30rem;
+}
+
+.product__caption {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 1.2rem 0;
+}
+
+.product__price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-style: normal;
+  margin-right: 0.6rem;
+}
+
+.currencyUnit {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.priceInstant,
+.priceWow {
+  color: var(--color-red-500);
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+/* 
 
 .container {
     padding: 100px 130px;
@@ -256,4 +520,4 @@
 
 .special-price {
     margin-top: 4px;
-}
+} */
