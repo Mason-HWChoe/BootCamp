@@ -15,119 +15,110 @@
 </head>
 
 <body>
-
-  <div class="container">
-    <header class="header">
-      <div class="login-bar-area">
-        <div class="common-inner">
-          <div class="login-bar">
-            <ul class="login-bar-list">
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">회원가입</a></li>
-              <li><a href="#">고객센터</a></li>
-              <li><a href="#">쿠팡플레이</a></li>
-              <li><a href="#">제휴마케팅</a></li>
-            </ul>
+  <header class="header">
+    <div class="loginBar">
+      <ul class="loginBar__list">
+        <li class="loginBar__item">
+          <a href="/" class="loginBar__link">로그인</a>
+        </li>
+        <li class="loginBar__item">
+          <a href="/" class="loginBar__link">회원가입</a>
+        </li>
+        <li class="loginBar__item">
+          <a href="/" class="loginBar__link">고객센터</a>
+        </li>
+        <li class="loginBar__item">
+          <a href="/" class="loginBar__link">쿠팡플레이</a>
+        </li>
+        <li class="loginBar__item">
+          <a href="/" class="loginBar__link">제휴마케팅</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__inner">
+      <h1 class="brand">
+        <a href="https://www.coupang.com" class="brand__link" target="_blank" rel="noopener norefferer">
+          <figure class="logo logo--ir logo--colorful">
+            <span class="sr-only">Coupang</span>
+          </figure>
+        </a>
+      </h1>
+      <button type="button" class="button--category">카테고리</button>
+      <form action="/" class="searchForm" method="GET">
+        <fieldset>
+          <legend class="sr-only">검색 폼</legend>
+          <div class="searchForm__wrapper">
+            <div class="formSelect">
+              <select name="searchCategory" id="searchCategory" class="formSelect__select" aria-label="검색 카테고리 선택">
+                <option>전체</option>
+                <option>여성패션</option>
+                <option>남성패션</option>
+                <option>남녀 공용 의류</option>
+                <option>유아동 패션</option>
+                <option>뷰티</option>
+              </select>
+              <svg class="iconDown" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H10L14.6957 18L19 12Z" fill="#767676"/>
+              </svg>                
+            </div>
+            <div class="formInput">
+              <label for="searchKeyword" class="sr-only">검색어</label>
+              <input type="search" id="searchKeyword" class="formInput__input" placeholder="찾고 싶은 상품을 검색해 보세요!" required />
+            </div>
+            <button type="button" class="button--search" aria-label="검색"></button>
+            <button type="button" class="button--voiceSearch" aria-label="음성검색"></button>
           </div>
+        </fieldset>
+      </form>
+      <div class="myCoupang">
+        <button type="button" class="button button--myCoupang">마이쿠팡</button>
+        <ul class="myCoupang__list">
+          <li class="myCoupang__item"><a href="/" class="myCoupang__link">주문목록</a></li>
+          <li class="myCoupang__item"><a href="/" class="myCoupang__link">취소/반품</a></li>
+          <li class="myCoupang__item"><a href="/" class="myCoupang__link">찜리스트</a></li>
+        </ul>
+      </div>
+      <div class="cart">
+        <div class="cart__buttonWrapper">
+          <button class="button button--cart">장바구니</button>
+          <span class="sr-only">상품개수</span><strong class="cartProductCount">0</strong>
+        </div>
+        <div class="cart__detail">
+          <div class="cart__empty">장바구니에 담긴 상품이 없습니다</div>
         </div>
       </div>
-
-      <div class="main-header">
-        <div class="common-inner">
-          <div class="header-inner">
-            <div class="logo-area">
-              <a class="logo" href="https://www.coupang.com" target="_blank" rel="noopener">
-                <h1>
-                  <div class="logo-img"></div>
-                  <div class="logo-txt">Coupang</div>
-                </h1>
-              </a>
-            </div>
-
-            <div class="category-btn-area">
-              <button class="button--category">
-                <div class="btn-img"></div>
-                <span class="btn-text">카테고리</span>
-              </button>
-            </div>
-
-            <div class="search-area">
-              <form class="search-area-form">
-                <select class="select-bar" name="category" id="category-search">
-                  <option class="category-content" selected disabled hidden>전체</option>               
-                </select>
-                <input class="search-bar" type="search" placeholder="찾고 싶은 상품을 검색해 보세요!" required>
-                <button class="mic" aria-label="음성으로 검색">
-                  <img src="assets/icon/mic.svg" alt="음성검색 마이크">
-                </button>
-                <button class="search-btn" aria-label="검색하기 버튼">
-                  <img src="assets/icon/search.svg" alt="검색하기 돋보기">
-                </button>
-              </form>
-            </div>
-
-            <div class="myCoupang">
-              <button class="my-coupang-btn">
-                <div class="my-coupang-img"></div>
-                <div class="my-coupang-txt">마이쿠팡</div>
-              </button>
-              <div class="link-list-area">
-                <ul class="link-list" >
-                  <li class="link-content">
-                    <a href="/">주문목록</a>
-                  </li>
-                  <li class="link-content">
-                    <a href="/">취소/반품</a>
-                  </li>
-                  <li class="link-content">
-                    <a href="/">찜리스트</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="cart">
-              <button class="cart-btn">
-                <div class="cart-img">
-                  <div class="cart-count">0</div>
-                </div>
-                <div class="cart-txt">장바구니</div>
-              </button>
-              <div class="cart-content-area">
-                <p class="cart-content-txt">장바구니에 담긴 상품이 없습니다.</p>
-              </div>
-            </div>
-
-            <div class="nav-area">
-              <p class="nav-txt">
-                <img src="assets/icon/icon-rocket.svg" alt="로켓배송">
-                로켓배송
-              </p>
-              <p class="nav-txt">
-                <img src="assets/icon/icon-fresh.svg" alt="식재료">
-                로켓프레시
-              </p>
-              <p class="nav-txt">
-                2022년 설날
-                <img src="assets/icon/new.svg" alt="새 상품">
-              </p>
-              <p class="nav-txt">로켓직구</p>
-              <p class="nav-txt">골드박스</p>
-              <p class="nav-txt">정기배송</p>
-              <p class="nav-txt">이벤트/쿠폰</p>
-              <p class="nav-txt">기획전</p>
-              <p class="nav-txt">여행티켓</p>
-            </div>
-
-          </div>
-
-        </div>
+      <div class="typeNavigation">
+        <ul class="typeNavigation__list">
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link"><img class="badge--rocket" src="./assets/icon/icon-rocket.svg" alt=""/> 로켓배송</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link"><img class="badge--rocket" src="./assets/icon/icon-fresh.svg" alt=""/> 로켓프레시</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">2022년 설날 <img class="badge--new" src="./assets/icon/new.svg" alt="New"/></a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">로켓직구</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">골드박스</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">정기배송</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">이벤트/쿠폰</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">기획전</a>
+          </li>
+          <li class="typeNavigation__item">
+            <a href="/" class="typeNavigation__link">여행티켓</a>
+          </li>
+        </ul>
       </div>
-
-
-
-    </header>
-  </div>
-</body>
+    </div>
+  </body>
 
 </html>
