@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+.date-picker {
+  position: relative;
+}
+
+.date-input {
+  margin: 30px auto;
+  display: flex;
+  height: 60px;
+  width: 300px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.calendar {
+  display: none;
+  position: absolute;
+  width: 700px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  outline: 2px solid lightgrey;
+  border-radius: 3%;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.calendar.active {
+  display: block;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #313131;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrows:hover {
+  background-color: #9ae00e;
+}
+
+.arrows:active {
+  background-color: #00a2ff;
+}
+
+.days {
+  display: flex;
+}
+
+.day {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.day:first-child {
+  color: red;
+}
+
+.day:last-child {
+  color: blue;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #313131;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.date:hover {
+  background-color: lightblue;
+}
+
+.date.today {
+  background-color: lightseagreen;
+  border-radius: 50%;
+}
+
+.date.selected {
+  background-color: #ffbbd2;
+  border-radius: 50%;
+}
+
+.date.prevMonth,
+.date.nextMonth {
+  color: gray !important;
+}
